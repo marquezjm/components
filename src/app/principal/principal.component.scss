@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 8px;
+    height: 100vh; /* 100% del alto de la ventana */
+    width: 100vw;  /* 100% del ancho de la ventana */
+    box-sizing: border-box;
+}
+    
+.div1 {
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 {
+    grid-column: span 9;
+    grid-row: span 6;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div3 {
+    grid-column: span 4;
+    grid-row: span 9;
+    grid-column-start: 10;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div4 {
+    grid-column: span 9;
+    grid-row: span 3;
+    grid-row-start: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .parent{
+        .div2{
+            grid-column: span 12 !important;
+            grid-row: span 6 !important;
+            grid-row-start: 2 !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div3{
+          display: none;
+        }
+        .div4{
+            grid-column: span 12 !important;
+            grid-row: span 3 !important;
+            grid-row-start: 8 !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+  }
+  
+  /* Estilos para dispositivos con una anchura mínima de 768px y una anchura máxima de 1024px (tabletas en modo horizontal) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+  }
+  
+  /* Estilos para dispositivos con una anchura mínima de 1024px (ordenadores de escritorio, laptops, algunas tabletas en modo horizontal) */
+  @media only screen and (min-width: 1024px) {
+    /* Tus estilos CSS para ordenadores y tablets en modo horizontal */
+  }

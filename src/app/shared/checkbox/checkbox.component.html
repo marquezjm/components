@@ -1,0 +1,12 @@
+<label class="checkbox-container" [class.invalid]="ngControl?.invalid && ngControl?.touched">
+    Acepto términos
+    <!--input type="checkbox" [(ngModel)]="valor" (change)="onCheckboxChange($event)" (blur)="onTouched()"-->
+    <input
+        type="checkbox"
+        [checked]="valor"
+        [disabled]="disabled"
+        (change)="onCheckboxChange($event)"
+        (click)="onTouched()"
+        />
+    <span class="checkmark"></span>
+  </label>
