@@ -1,0 +1,12 @@
+<div class="container_tabs">
+    <div class="cabecera">
+        <ng-container *ngFor="let tab of tabs">
+            <div *ngIf="tab.mostrar" class="tab" (click)="selectTab(tab)" [class.active]="tab.active">
+                {{ tab.tabTitle }}
+            </div>
+        </ng-container>
+    </div>
+    <div class="body">
+        <ng-content></ng-content>
+    </div>
+</div>

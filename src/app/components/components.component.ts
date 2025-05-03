@@ -9,7 +9,8 @@ import { FormBuilder, Validators } from '@angular/forms';
 export class ComponentsComponent implements OnInit {
 
   formulario = this.fb.group({
-    check: [false,Validators.requiredTrue]
+    check: [false,Validators.requiredTrue],
+    radio: ['',Validators.required],
   })
 
   constructor(private fb:FormBuilder) { }
@@ -18,10 +19,11 @@ export class ComponentsComponent implements OnInit {
     this.formulario.controls['check'].setValue(false)
     
     
-    //this.formulario.controls['check'].disable()
+    this.formulario.controls['radio'].disable()
   }
 
   submit(){
+    this.formulario.markAllAsTouched();
     console.log(this.formulario.value);
     console.log('formulario valido', this.formulario.valid);
   }

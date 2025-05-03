@@ -8,13 +8,19 @@ import { CheckboxComponent } from './shared/checkbox/checkbox.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RadioComponent } from './shared/radio/radio.component';
+import { TabsComponent } from './shared/tabs/tabs.component';
+import { TabComponent } from './shared/tab/tab.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentsComponent,
     CheckboxComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    RadioComponent,
+    TabsComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,5 @@
+<label class="radio-container" [class.invalid]="ngControl?.invalid && ngControl?.touched">
+    <input type="radio" [name]="name" [value]="value" [checked]="isChecked()" [disabled]="disabled" (click)="select()"
+        (blur)="onTouched()" />
+    <span class="radiomark"></span>
+</label>

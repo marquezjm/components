@@ -1,0 +1,13 @@
+.container_tabs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .cabecera{
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        .tab{
+            padding: 1em;
+        }
+    }
+}

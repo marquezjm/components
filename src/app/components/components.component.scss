@@ -1,0 +1,35 @@
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px; /* Espacio entre cajas */
+
+    &_control{
+        flex: 1 1 300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        height: 300px;
+        width: 300px;
+
+        padding: 20px;
+        border-radius: 8px;
+        min-width: 200px;
+
+        .contenedor_radio{
+            display: flex;
+            flex-direction: row;
+        }
+
+        
+    }
+
+    .radio{
+        flex-direction: column ;
+    }
+}

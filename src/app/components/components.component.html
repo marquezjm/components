@@ -1,4 +1,52 @@
-<form [formGroup]="formulario" (submit)="submit()">
-    <app-checkbox formControlName="check"></app-checkbox>
-    <button type="submit">Enviar</button>
-</form>
+<div class="contenedor">
+    <div class="contenedor_control">
+        <app-checkbox></app-checkbox>
+    </div>
+    <div class="contenedor_control radio">
+        <div class="contenedor_radio">
+            <app-radio [name]="'radio'" [value]="'A'"></app-radio>
+            A
+        </div>
+        <div class="contenedor_radio">
+            <app-radio [name]="'radio'" [value]="'B'"></app-radio>
+            B
+        </div>
+    </div>
+    <div class="contenedor_control">
+        <div app-tabs>
+            <app-tab tabTitle="Descripcion del Curso">
+                <h3>Acerca de este curso</h3>
+                <!--p>{{tema.descripcion}}</p-->
+            </app-tab>
+            <app-tab tabTitle="Tab 2">
+                <h3>Contenido del Tab 2</h3>
+                <p>Este es el contenido del segundo tab.<br><br><br><br><br><br><br><br><br><br><br>ejemplo</p>
+            </app-tab>
+            <app-tab tabTitle="Tab 3">
+                <h3>Contenido del Tab 3</h3>
+                <p>Este es el contenido del tercer tab.</p>
+            </app-tab>
+            <app-tab tabTitle="Tab 4">
+                <h3>Contenido del Tab 4</h3>
+                <p>Este es el contenido del tercer tab.</p>
+            </app-tab>
+            <app-tab tabTitle="Tab 5">
+                <h3>Contenido del Tab 5</h3>
+                <p>Este es el contenido del tercer tab.</p>
+            </app-tab>
+            <app-tab tabTitle="Tab 6">
+                <h3>Contenido del Tab 6</h3>
+                <p>Este es el contenido del tercer tab.</p>
+            </app-tab>
+            <app-tab tabTitle="Tab 7">
+                <h3>Contenido del Tab 7</h3>
+                <p>Este es el contenido del tercer tab.</p>
+            </app-tab>
+            <app-tab tabTitle="Tab 8">
+                <h3>Contenido del Tab </h3>
+                <p>Este es el contenido del tercer tab.</p>
+            </app-tab>
+        </div>
+
+    </div>
+</div>
