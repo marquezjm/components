@@ -5,9 +5,12 @@
     .cabecera{
         display: flex;
         flex-direction: row;
-        overflow: scroll;
+        overflow-x: scroll;
+        width: auto;
         .tab{
             padding: 1em;
+            white-space: nowrap;         // evita que el texto se divida en dos líneas
+            width: fit-content;
         }
     }
 }
