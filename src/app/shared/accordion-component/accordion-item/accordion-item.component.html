@@ -1,0 +1,16 @@
+<div class="accordion-item">
+    <div class="accordion-title" (click)="toggle()">
+        <div class="accordion-title-text">
+            <div class="accordion-tittle-text-tittle">
+                {{ title }}
+            </div>
+            <div class="accordion-tittle-text-time fs-x-small">
+                {{temas_completados}} / {{total_temas}} | {{duracion_m}} min
+            </div>
+        </div>
+        <!--fa-icon [icon]="isOpen?faChevronDown:faChevronUp" class="icono" ></fa-icon-->
+    </div>
+    <div *ngIf="isOpen" class="accordion-content">
+        <ng-content></ng-content>
+    </div>
+</div>
